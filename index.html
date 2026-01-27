@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+
     <header id="hero">
         <div class="hero-overlay">
             <div class="hero-content">
@@ -37,10 +43,28 @@
     <section id="about" class="section">
         <div class="container">
             <h2>About Me</h2>
-            <div class="glass-card">
-                <p>Bachelor of Science in Information Technology – Kabarak University (2022–2026)</p>
-                <p>Strong interest in frontend development, system design, and real-world problem-solving</p>
-                <p>Experience working on academic and personal tech projects with real-life impact</p>
+            <div class="glass-card about-card">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p><strong>Bachelor of Science in Information Technology</strong> – Kabarak University (2022–2026)</p>
+                        <p>Strong interest in frontend development, system design, and real-world problem-solving. Experienced in academic and personal tech projects with real-life impact.</p>
+                        <p>Skilled in modern web technologies, with a focus on creating intuitive and efficient digital solutions.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>4+</h3>
+                            <p>Years Studying IT</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3</h3>
+                            <p>Certifications</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -53,26 +77,41 @@
                     <i class="fas fa-code"></i>
                     <h3>Frontend</h3>
                     <p>HTML, CSS, JavaScript, React</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 85%"></div>
+                    </div>
                 </div>
                 <div class="glass-card skill-card">
                     <i class="fas fa-server"></i>
                     <h3>Backend (Basic)</h3>
                     <p>Node.js, Express</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 70%"></div>
+                    </div>
                 </div>
                 <div class="glass-card skill-card">
                     <i class="fas fa-database"></i>
                     <h3>Databases</h3>
                     <p>MongoDB, MySQL</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 75%"></div>
+                    </div>
                 </div>
                 <div class="glass-card skill-card">
                     <i class="fas fa-tools"></i>
                     <h3>Tools</h3>
                     <p>Git, GitHub, VS Code</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%"></div>
+                    </div>
                 </div>
                 <div class="glass-card skill-card">
                     <i class="fas fa-palette"></i>
                     <h3>Other</h3>
                     <p>UI/UX Basics, REST APIs</p>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 80%"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,30 +122,39 @@
             <h2>Projects</h2>
             <div class="projects-grid">
                 <div class="glass-card project-card">
-                    <h3>AgriPrice System</h3>
+                    <div class="project-header">
+                        <h3>AgriPrice System</h3>
+                        <span class="project-status">Completed</span>
+                    </div>
                     <p>A web-based platform that helps farmers and buyers access real-time agricultural product prices.</p>
-                    <p>Features: product listing, price comparison, backend integration.</p>
-                    <p class="tech">Tech: HTML, CSS, JavaScript, React, Node.js, MongoDB</p>
+                    <p><strong>Features:</strong> product listing, price comparison, backend integration.</p>
+                    <p class="tech"><strong>Tech:</strong> HTML, CSS, JavaScript, React, Node.js, MongoDB</p>
                     <div class="project-buttons">
                         <button class="btn small">View Demo</button>
                         <button class="btn small">Source Code</button>
                     </div>
                 </div>
                 <div class="glass-card project-card">
-                    <h3>E-Commerce Website</h3>
+                    <div class="project-header">
+                        <h3>E-Commerce Website</h3>
+                        <span class="project-status">Completed</span>
+                    </div>
                     <p>Online shopping platform with product catalog, cart system, and checkout flow.</p>
-                    <p>Focus on user-friendly design and responsive layout.</p>
-                    <p class="tech">Tech: HTML, CSS, JavaScript</p>
+                    <p><strong>Focus:</strong> user-friendly design and responsive layout.</p>
+                    <p class="tech"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
                     <div class="project-buttons">
                         <button class="btn small">View Demo</button>
                         <button class="btn small">Source Code</button>
                     </div>
                 </div>
                 <div class="glass-card project-card">
-                    <h3>Elderly Care Management System</h3>
+                    <div class="project-header">
+                        <h3>Elderly Care Management System</h3>
+                        <span class="project-status">Completed</span>
+                    </div>
                     <p>A system designed to support elderly care management through appointments, reminders, and caregiver interaction.</p>
-                    <p>Focused on accessibility and simplicity.</p>
-                    <p class="tech">Tech: HTML, CSS, JavaScript</p>
+                    <p><strong>Focus:</strong> accessibility and simplicity.</p>
+                    <p class="tech"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
                     <div class="project-buttons">
                         <button class="btn small">View Demo</button>
                         <button class="btn small">Source Code</button>
@@ -121,13 +169,19 @@
             <h2>Certifications</h2>
             <div class="certs-grid">
                 <div class="glass-card cert-card">
+                    <i class="fas fa-certificate"></i>
                     <h3>Junior Cybersecurity Analyst Certification</h3>
+                    <p>Issued by [Issuer]</p>
                 </div>
                 <div class="glass-card cert-card">
+                    <i class="fas fa-network-wired"></i>
                     <h3>Cisco CCNA 1</h3>
+                    <p>Networking Fundamentals</p>
                 </div>
                 <div class="glass-card cert-card">
+                    <i class="fas fa-code"></i>
                     <h3>Python Essentials 1</h3>
+                    <p>Programming Basics</p>
                 </div>
             </div>
         </div>
@@ -138,17 +192,26 @@
             <h2>Contact Me</h2>
             <div class="glass-card contact-card">
                 <form id="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
                     <textarea placeholder="Your Message" required></textarea>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
                 <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> 9016lucynjeri@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> 0741363694</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>9016lucynjeri@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>0741363694</span>
+                    </div>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-github"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
@@ -157,7 +220,15 @@
 
     <footer>
         <div class="container">
-            <p>© 2026 Wanjiru Lucy Njeri | Built with passion & code</p>
+            <div class="footer-content">
+                <p>© 2026 Wanjiru Lucy Njeri | Built with passion & code</p>
+                <div class="footer-links">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
         </div>
     </footer>
 
