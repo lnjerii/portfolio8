@@ -6,230 +6,268 @@
     <title>Wanjiru Lucy Njeri - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Scroll Progress Bar -->
-    <div id="scroll-progress"></div>
+    <div class="bg-orbs">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+    </div>
 
-    <!-- Animated Background -->
-    <div class="animated-bg"></div>
-
-    <header id="hero">
-        <div class="hero-overlay">
-            <div class="hero-content">
-                <h1>Wanjiru Lucy Njeri</h1>
-                <p class="title">Information Technology | Frontend Developer | Aspiring Software Engineer</p>
-                <p class="intro">"Passionate IT student focused on building practical, user-centered digital solutions using modern web technologies."</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn">View Projects</a>
-                    <a href="#contact" class="btn">Contact Me</a>
-                </div>
+    <header class="site-header">
+        <nav class="nav">
+            <div class="logo">WN</div>
+            <div class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
             </div>
-        </div>
+            <a class="nav-cta" href="#contact">Let's Talk</a>
+        </nav>
     </header>
 
-    <nav>
-        <div class="nav-container">
-            <a href="#hero" class="nav-link">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#certifications" class="nav-link">Certifications</a>
-            <a href="#contact" class="nav-link">Contact</a>
-            <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
-        </div>
-    </nav>
-
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="glass-card about-card">
-                <div class="about-content">
-                    <div class="about-text">
-                        <p><strong>Bachelor of Science in Information Technology</strong> – Kabarak University (2022–2026)</p>
-                        <p>Strong interest in frontend development, system design, and real-world problem-solving. Experienced in academic and personal tech projects with real-life impact.</p>
-                        <p>Skilled in modern web technologies, with a focus on creating intuitive and efficient digital solutions.</p>
-                    </div>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>4+</h3>
-                            <p>Years Studying IT</p>
-                        </div>
-                        <div class="stat">
-                            <h3>3+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat">
-                            <h3>3</h3>
-                            <p>Certifications</p>
-                        </div>
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Hi, I am Wanjiru Lucy Njeri</p>
+                <h1>Information Technology student crafting user-centered digital experiences.</h1>
+                <p class="tagline">Judges a product by its feel because the details matter.</p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="#projects">View Projects</a>
+                    <a class="btn ghost" href="#contact">Contact Me</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/lnjerii" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/lucy-njeri-369645275/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="card-header">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="card-body">
+                    <img src="assets/njeri-removebg-preview.png" alt="Portrait of Wanjiru Lucy Njeri" class="hero-portrait">
+                    <div class="card-text">
+                        <p class="card-title">I'm a Frontend Developer.</p>
+                        <p class="card-sub">Focused on clean UI, accessibility, and delightful interactions.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="glass-card skill-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Frontend</h3>
-                    <p>HTML, CSS, JavaScript, React</p>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 85%"></div>
-                    </div>
+        <section id="about" class="section">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>IT student passionate about frontend engineering, system design, and building real-world solutions.</p>
+            </div>
+            <div class="about-grid">
+                <div class="glass">
+                    <h3>Academic Focus</h3>
+                    <p>Bachelor of Science in Information Technology at Kabarak University (2022-2026).</p>
                 </div>
-                <div class="glass-card skill-card">
-                    <i class="fas fa-server"></i>
-                    <h3>Backend (Basic)</h3>
-                    <p>Node.js, Express</p>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 70%"></div>
-                    </div>
+                <div class="glass">
+                    <h3>What I Love</h3>
+                    <p>Designing intuitive user interfaces, crafting responsive layouts, and building modern web apps.</p>
                 </div>
-                <div class="glass-card skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Databases</h3>
-                    <p>MongoDB, MySQL</p>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 75%"></div>
-                    </div>
-                </div>
-                <div class="glass-card skill-card">
-                    <i class="fas fa-tools"></i>
-                    <h3>Tools</h3>
-                    <p>Git, GitHub, VS Code</p>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 90%"></div>
-                    </div>
-                </div>
-                <div class="glass-card skill-card">
-                    <i class="fas fa-palette"></i>
-                    <h3>Other</h3>
-                    <p>UI/UX Basics, REST APIs</p>
-                    <div class="skill-bar">
-                        <div class="skill-fill" style="width: 80%"></div>
-                    </div>
+                <div class="glass">
+                    <h3>Current Goal</h3>
+                    <p>Seeking a collaborative team where I can grow as a software engineer and contribute to impactful products.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="glass-card project-card">
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2>Work Experience / Projects</h2>
+                <p>Selected work showcasing my design and development capabilities.</p>
+            </div>
+            <div class="project-grid">
+                <article class="glass project-card">
                     <div class="project-header">
                         <h3>AgriPrice System</h3>
-                        <span class="project-status">Completed</span>
+                        <span class="chip">Completed</span>
                     </div>
-                    <p>A web-based platform that helps farmers and buyers access real-time agricultural product prices.</p>
-                    <p><strong>Features:</strong> product listing, price comparison, backend integration.</p>
-                    <p class="tech"><strong>Tech:</strong> HTML, CSS, JavaScript, React, Node.js, MongoDB</p>
-                    <div class="project-buttons">
-                        <button class="btn small">View Demo</button>
-                        <button class="btn small">Source Code</button>
+                    <p>Web platform helping farmers and buyers access real-time agricultural prices and product listings.</p>
+                    <p class="meta">Tech: HTML, CSS, JavaScript, React, Node.js, MongoDB</p>
+                    <div class="project-actions">
+                        <a class="btn small" href="https://github.com/lnjerii/AGRIPRICE.APP" target="_blank" rel="noopener">Live Demo</a>
+                        <a class="btn small ghost" href="https://github.com/lnjerii/AGRIPRICE.APP" target="_blank" rel="noopener">Source Code</a>
                     </div>
-                </div>
-                <div class="glass-card project-card">
+                </article>
+                <article class="glass project-card">
                     <div class="project-header">
-                        <h3>E-Commerce Website</h3>
-                        <span class="project-status">Completed</span>
+                        <h3>Smart Waste Management</h3>
+                        <span class="chip">Completed</span>
                     </div>
-                    <p>Online shopping platform with product catalog, cart system, and checkout flow.</p>
-                    <p><strong>Focus:</strong> user-friendly design and responsive layout.</p>
-                    <p class="tech"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-                    <div class="project-buttons">
-                        <button class="btn small">View Demo</button>
-                        <button class="btn small">Source Code</button>
+                    <p>Smart system for tracking bin status, optimizing collection routes, and reducing overflow alerts.</p>
+                    <p class="meta">Tech: HTML, CSS, JavaScript</p>
+                    <div class="project-actions">
+                        <a class="btn small" href="https://smart-waste-management-cj8ann9rv-9016lucynjeri-9380s-projects.vercel.app/login" target="_blank" rel="noopener">Live Demo</a>
+                        <a class="btn small ghost" href="https://github.com/lnjerii/smart-waste-management" target="_blank" rel="noopener">Source Code</a>
                     </div>
-                </div>
-                <div class="glass-card project-card">
+                </article>
+                <article class="glass project-card">
                     <div class="project-header">
                         <h3>Elderly Care Management System</h3>
-                        <span class="project-status">Completed</span>
+                        <span class="chip">Completed</span>
                     </div>
-                    <p>A system designed to support elderly care management through appointments, reminders, and caregiver interaction.</p>
-                    <p><strong>Focus:</strong> accessibility and simplicity.</p>
-                    <p class="tech"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-                    <div class="project-buttons">
-                        <button class="btn small">View Demo</button>
-                        <button class="btn small">Source Code</button>
+                    <p>Care-focused system supporting reminders, appointments, and caregiver communication.</p>
+                    <p class="meta">Tech: HTML, CSS, JavaScript</p>
+                    <div class="project-actions">
+                        <a class="btn small" href="https://github.com/lnjerii/elderly-system" target="_blank" rel="noopener">Live Demo</a>
+                        <a class="btn small ghost" href="https://github.com/lnjerii/elderly-system" target="_blank" rel="noopener">Source Code</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="section-header">
+                <h2>Skills Orbit</h2>
+                <p>Core tools and technologies I use to build digital products.</p>
+            </div>
+            <div class="skills-orbit glass">
+                <div class="orbit-center">Skills</div>
+                <span class="orbit-item">HTML</span>
+                <span class="orbit-item">CSS</span>
+                <span class="orbit-item">JavaScript</span>
+                <span class="orbit-item">React</span>
+                <span class="orbit-item">Node.js</span>
+                <span class="orbit-item">MongoDB</span>
+                <span class="orbit-item">Git</span>
+                <span class="orbit-item">Figma</span>
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <div class="section-header">
+                <h2>Certifications</h2>
+                <p>Cisco credentials earned in 2024.</p>
+            </div>
+            <div class="marquee">
+                <div class="marquee-inner">
+                    <div class="marquee-track">
+                    <article class="glass cert-card">
+                        <img src="assets/cisco_logo.jpeg" alt="Cisco logo" class="cert-logo">
+                        <h3>Python Essentials 1</h3>
+                        <p>Cisco</p>
+                        <p>Issued Oct 2024</p>
+                        <a class="cert-link" href="#" target="_blank" rel="noopener">Show credential</a>
+                    </article>
+                    <article class="glass cert-card">
+                        <img src="assets/cisco_logo.jpeg" alt="Cisco logo" class="cert-logo">
+                        <h3>Junior Cybersecurity Analyst Career Path</h3>
+                        <p>Cisco</p>
+                        <p>Issued Oct 2024</p>
+                        <a class="cert-link" href="#" target="_blank" rel="noopener">Show credential</a>
+                    </article>
+                    <article class="glass cert-card">
+                        <img src="assets/cisco_logo.jpeg" alt="Cisco logo" class="cert-logo">
+                        <h3>Introduction to Cybersecurity</h3>
+                        <p>Cisco</p>
+                        <p>Issued Oct 2024</p>
+                        <a class="cert-link" href="#" target="_blank" rel="noopener">Show credential</a>
+                    </article>
+                    <article class="glass cert-card">
+                        <img src="assets/cisco_logo.jpeg" alt="Cisco logo" class="cert-logo">
+                        <h3>Junior Cybersecurity Analyst Career Path</h3>
+                        <p>Cisco</p>
+                        <p>Issued Oct 2024</p>
+                        <a class="cert-link" href="#" target="_blank" rel="noopener">Show credential</a>
+                    </article>
+                    </div>
+                    <div class="marquee-track" aria-hidden="true">
+                    <article class="glass cert-card">
+                        <img src="assets/cisco_logo.jpeg" alt="Cisco logo" class="cert-logo">
+                        <h3>Python Essentials 1</h3>
+                        <p>Cisco</p>
+                        <p>Issued Oct 2024</p>
+                        <a class="cert-link" href="#" target="_blank" rel="noopener">Show credential</a>
+                    </article>
+                    <article class="glass cert-card">
+                        <img src="assets/cisco_logo.jpeg" alt="Cisco logo" class="cert-logo">
+                        <h3>Junior Cybersecurity Analyst Career Path</h3>
+                        <p>Cisco</p>
+                        <p>Issued Oct 2024</p>
+                        <a class="cert-link" href="#" target="_blank" rel="noopener">Show credential</a>
+                    </article>
+                    <article class="glass cert-card">
+                        <img src="assets/cisco_logo.jpeg" alt="Cisco logo" class="cert-logo">
+                        <h3>Introduction to Cybersecurity</h3>
+                        <p>Cisco</p>
+                        <p>Issued Oct 2024</p>
+                        <a class="cert-link" href="#" target="_blank" rel="noopener">Show credential</a>
+                    </article>
+                    <article class="glass cert-card">
+                        <img src="assets/cisco_logo.jpeg" alt="Cisco logo" class="cert-logo">
+                        <h3>Junior Cybersecurity Analyst Career Path</h3>
+                        <p>Cisco</p>
+                        <p>Issued Oct 2024</p>
+                        <a class="cert-link" href="#" target="_blank" rel="noopener">Show credential</a>
+                    </article>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="certifications" class="section">
-        <div class="container">
-            <h2>Certifications</h2>
-            <div class="certs-grid">
-                <div class="glass-card cert-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3>Junior Cybersecurity Analyst Certification</h3>
-                    <p>Issued by [Issuer]</p>
+        <section class="section featured">
+            <div class="featured-grid">
+                <div class="section-header">
+                    <h2>Featured Project</h2>
+                    <p>Highlighting a project with a clear outcome and user value.</p>
+                    <a class="btn primary" href="#projects">Explore All Projects</a>
                 </div>
-                <div class="glass-card cert-card">
-                    <i class="fas fa-network-wired"></i>
-                    <h3>Cisco CCNA 1</h3>
-                    <p>Networking Fundamentals</p>
-                </div>
-                <div class="glass-card cert-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Python Essentials 1</h3>
-                    <p>Programming Basics</p>
+                <div class="glass featured-card">
+                    <div class="featured-preview">
+                        <div class="preview-glow"></div>
+                        <div class="preview-mock">AgriPrice UI Preview</div>
+                    </div>
+                    <div class="featured-details">
+                        <h3>AgriPrice System</h3>
+                        <p>Designed and built a platform to help users compare live prices, track product availability, and connect with suppliers faster.</p>
+                        <div class="project-actions">
+                            <a class="btn small" href="https://github.com/lnjerii/AGRIPRICE.APP" target="_blank" rel="noopener">Live Demo</a>
+                            <a class="btn small ghost" href="https://github.com/lnjerii/AGRIPRICE.APP" target="_blank" rel="noopener">Source Code</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <div class="glass-card contact-card">
-                <form id="contact-form">
-                    <div class="form-group">
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2>Contact</h2>
+                <p>Let's build something impactful together. I respond quickly.</p>
+            </div>
+            <div class="contact-grid">
+                <form class="glass contact-form">
+                    <div class="input-row">
                         <input type="text" placeholder="Your Name" required>
                         <input type="email" placeholder="Your Email" required>
                     </div>
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button class="btn primary" type="submit">Send Message</button>
                 </form>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>9016lucynjeri@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>0741363694</span>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <div class="glass contact-card">
+                    <h3>Direct</h3>
+                    <p><i class="fas fa-envelope"></i> 9016lucynjeri@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 0741363694</p>
+                    <div class="hero-socials">
+                        <a href="https://github.com/lnjerii" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/lucy-njeri-369645275/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <p>© 2026 Wanjiru Lucy Njeri | Built with passion & code</p>
-                <div class="footer-links">
-                    <a href="#hero">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-        </div>
+    <footer class="footer">
+        <p>&copy; 2026 Wanjiru Lucy Njeri. Built with passion and code.</p>
     </footer>
 
     <script src="script.js"></script>
