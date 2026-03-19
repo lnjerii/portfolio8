@@ -27,6 +27,20 @@ body {
     overflow-x: hidden;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+span {
+    overflow-wrap: break-word;
+}
+
+p {
+    hyphens: auto;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -278,6 +292,7 @@ main {
 .project-card {
     display: grid;
     gap: 16px;
+    min-width: 0;
 }
 
 .project-header {
@@ -602,4 +617,26 @@ main {
     .orbit-item:nth-child(8) { --x: -10px; --y: -110px; }
     .orbit-item:nth-child(9) { --x: 10px; --y: 120px; }
     .orbit-item:nth-child(10) { --x: 140px; --y: 70px; }
+}
+
+@media (max-width: 420px) {
+    .skills-orbit {
+        height: 240px;
+        transform: scale(0.86);
+    }
+
+    .orbit-item {
+        font-size: 0.72rem;
+        padding: 5px 10px;
+    }
+
+    .orbit-item:nth-child(2) { --x: -75px; --y: -60px; }
+    .orbit-item:nth-child(3) { --x: 85px; --y: -60px; }
+    .orbit-item:nth-child(4) { --x: 90px; --y: 5px; }
+    .orbit-item:nth-child(5) { --x: 60px; --y: 85px; }
+    .orbit-item:nth-child(6) { --x: -60px; --y: 85px; }
+    .orbit-item:nth-child(7) { --x: -90px; --y: 5px; }
+    .orbit-item:nth-child(8) { --x: -5px; --y: -95px; }
+    .orbit-item:nth-child(9) { --x: 5px; --y: 105px; }
+    .orbit-item:nth-child(10) { --x: 115px; --y: 55px; }
 }
