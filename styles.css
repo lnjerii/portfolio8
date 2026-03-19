@@ -364,6 +364,7 @@ main {
     border: 1px solid rgba(168, 85, 247, 0.5);
     font-size: 0.85rem;
     animation: float 6s ease-in-out infinite;
+    white-space: nowrap;
 }
 
 .orbit-item:nth-child(2) { --x: -120px; --y: -90px; }
@@ -539,4 +540,66 @@ main {
     .input-row {
         grid-template-columns: 1fr;
     }
+
+    .hero-card {
+        padding: 18px;
+    }
+
+    .hero-portrait {
+        width: 100%;
+    }
+
+    .skills-orbit {
+        height: 300px;
+    }
+
+    .orbit-item {
+        font-size: 0.78rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 560px) {
+    .nav {
+        padding: 14px 16px;
+    }
+
+    main {
+        padding: 0 16px 60px;
+    }
+
+    .hero {
+        padding: 60px 0 40px;
+    }
+
+    .section {
+        padding: 60px 0 30px;
+    }
+
+    .project-actions,
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn,
+    .btn.small {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .skills-orbit {
+        height: 260px;
+        transform: scale(0.92);
+    }
+
+    .orbit-item:nth-child(2) { --x: -90px; --y: -70px; }
+    .orbit-item:nth-child(3) { --x: 100px; --y: -70px; }
+    .orbit-item:nth-child(4) { --x: 110px; --y: 10px; }
+    .orbit-item:nth-child(5) { --x: 70px; --y: 100px; }
+    .orbit-item:nth-child(6) { --x: -70px; --y: 100px; }
+    .orbit-item:nth-child(7) { --x: -110px; --y: 10px; }
+    .orbit-item:nth-child(8) { --x: -10px; --y: -110px; }
+    .orbit-item:nth-child(9) { --x: 10px; --y: 120px; }
+    .orbit-item:nth-child(10) { --x: 140px; --y: 70px; }
 }
